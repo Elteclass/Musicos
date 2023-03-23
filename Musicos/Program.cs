@@ -11,7 +11,7 @@ abstract class Musico
     }
 
     //Método
-    public void Saludar()
+    public virtual void Saludar()
     {
         Console.WriteLine("Hola soy {0}", Nombre);
     }
@@ -34,6 +34,10 @@ class Bajista:Musico
     }
 
     //Métodos
+    public override void Saludar()
+    {
+        Console.WriteLine($"{base.Saludar} y soy baterista");//agregar get saludo.
+    }
     public override void Toca()
     {
         Console.WriteLine($"{Nombre} tocando su {Bajo}");
