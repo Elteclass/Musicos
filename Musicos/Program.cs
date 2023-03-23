@@ -1,5 +1,5 @@
 ﻿//clase Musico
-class Musico
+abstract class Musico
 {
     //Atributos
     public string Nombre {get; set;}
@@ -15,10 +15,10 @@ class Musico
     {
         Console.WriteLine("Hola soy {0}", Nombre);
     }
-    public virtual void Toca()
-    {
+    public abstract void Toca();//Los metodos abstractos se delegan de manera obligatoria
+    /*{
         Console.WriteLine($"{Nombre}, esta tocando su instrumento");
-    }
+    }*/
 
 }
 
@@ -68,3 +68,4 @@ internal class Program
 }
 
 // Poner baterista y guitarrista
+//Las clases abstractas solo pueden crear referencias y no objetos
