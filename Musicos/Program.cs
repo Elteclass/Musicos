@@ -47,7 +47,7 @@ internal class Program
         //Lista
         List<Musico> grupo = new List<Musico>();
         grupo.Add(new Bajista("Maria", "Fluta"));
-        grupo.Add(new Musico ("Pancho"));
+        //grupo.Add(new Musico ("Pancho"));
 
         Console.WriteLine("Los integrantes del grupo son los siguientes:");
 
@@ -59,9 +59,9 @@ internal class Program
 
         Console.WriteLine("Los Musicos son:");
 
-        Musico y = new Musico("Pancho");
+        /*Musico y = new Musico("Pancho");
         y.Saludar();
-        y.Toca();
+        y.Toca();*/
         Bajista x = new Bajista("Maria", "Flauta");
         x.Toca();
     }
