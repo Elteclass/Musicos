@@ -11,9 +11,13 @@ abstract class Musico
     }
 
     //Método
+    public virtual string GetSaludo() => "Holas soy " + Nombre;
+    /*{
+        "Hola soy " + Nombre;
+    }*/
     public virtual void Saludar()
     {
-        Console.WriteLine("Hola soy {0}", Nombre);
+        Console.WriteLine(GetSaludo());
     }
     public abstract void Toca();//Los metodos abstractos se delegan de manera obligatoria
     /*{
@@ -34,10 +38,10 @@ class Bajista:Musico
     }
 
     //Métodos
-    public override void Saludar()
+    /*public override void Saludar()
     {
         Console.WriteLine($"{base.Saludar} y soy baterista");//agregar get saludo.
-    }
+    }*/
     public override void Toca()
     {
         Console.WriteLine($"{Nombre} tocando su {Bajo}");
